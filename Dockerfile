@@ -13,8 +13,8 @@ WORKDIR /api
 COPY Gemfile /api/Gemfile
 COPY Gemfile.lock /api/Gemfile.lock
 
-RUN gem install bundler -v $BUNDLER_VERSION
-
+RUN gem install bundler --no-document -v $BUNDLER_VERSION
 RUN bundler install
 
+RUN bundle install
 COPY . /api
