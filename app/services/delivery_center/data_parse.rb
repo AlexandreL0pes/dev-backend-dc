@@ -61,9 +61,6 @@ class DeliveryCenter::DataParse
       }
     end
 
-    puts "\n\n\n"
-    puts processed_order
-    puts "\n\n\n"
     processed_order
   end
 end
